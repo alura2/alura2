@@ -199,12 +199,12 @@
 											xmlns:xlink="http://www.w3.org/1999/xlink">
 											<use xlink:href="/svg,1617296511/carreira#icon-carreira-icon-placa"></use>
 										</svg>
-										<p class="formacoes__total--devops">
-											26 Formações</p>
+										<p class="formacoes__total--devops" id="quant_formacoes_devops">
+											x Formações</p>
 									</div>
 								</div>
 							</div>
-							<div class="formacao formacoes__list_wrapper">
+							<div class="formacao formacoes__list_wrapper" id="formacoes_devops">
 
 							</div>
 						</li>
@@ -226,12 +226,12 @@
 											xmlns:xlink="http://www.w3.org/1999/xlink">
 											<use xlink:href="/svg,1617296511/carreira#icon-carreira-icon-placa"></use>
 										</svg>
-										<p class="formacoes__total--design-ux">
-											36 Formações</p>
+										<p class="formacoes__total--design-ux" id="quant_formacoes_ux">
+											x Formações</p>
 									</div>
 								</div>
 							</div>
-							<div class="formacao formacoes__list_wrapper">
+							<div class="formacao formacoes__list_wrapper" id="formacoes_ux">
 
 							</div>
 						</li>
@@ -253,12 +253,12 @@
 											xmlns:xlink="http://www.w3.org/1999/xlink">
 											<use xlink:href="/svg,1617296511/carreira#icon-carreira-icon-placa"></use>
 										</svg>
-										<p class="formacoes__total--mobile">
-											11 Formações</p>
+										<p class="formacoes__total--mobile" id="quant_formacoes_mobile">
+											x Formações</p>
 									</div>
 								</div>
 							</div>
-							<div class="formacao formacoes__list_wrapper">
+							<div class="formacao formacoes__list_wrapper" id="formacoes_mobile">
 
 							</div>
 						</li>
@@ -281,12 +281,12 @@
 											xmlns:xlink="http://www.w3.org/1999/xlink">
 											<use xlink:href="/svg,1617296511/carreira#icon-carreira-icon-placa"></use>
 										</svg>
-										<p class="formacoes__total--inovacao-gestao">
-											49 Formações</p>
+										<p class="formacoes__total--inovacao-gestao" id="quant_formacoes_inovacao">
+											x Formações</p>
 									</div>
 								</div>
 							</div>
-							<div class="formacao formacoes__list_wrapper">
+							<div class="formacao formacoes__list_wrapper" id="formacoes_inovacao">
 
 							</div>
 						</li>
@@ -315,8 +315,11 @@
 
 	/*atualizando quantidades de formações*/
 	window.onload = function () {
-		//Atualizando a quantidade de formações de programação
 		contarFormacoes("formacoes_programacao","quant_formacoes_programacao");
 		contarFormacoes("formacoes_data_science","quant_formacoes_data_science");
+		contarFormacoes("formacoes_devops","quant_formacoes_devops");
+		contarFormacoes("formacoes_ux","quant_formacoes_ux");
+		contarFormacoes("formacoes_mobile","quant_formacoes_mobile");
+		contarFormacoes("formacoes_inovacao","quant_formacoes_inovacao");
 	};
 </script>
