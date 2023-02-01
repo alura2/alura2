@@ -289,13 +289,23 @@
 
 </html>
 <script>
-	/*atualizando quantidades de formações*/
-	window.onload = function () {
-		let formacoesProgramacao = document.getElementById("formacoes_programacao");
-		let h4Elements = formacoesProgramacao.getElementsByTagName("h4");
+	
+	/** Atualiza a quantidade de formações baseado na quantidade de h4 dentro de uma div
+	 * @param idFormacoes div a ser contada
+	 * @param idDisplayer onde será exibido a quantidade
+	*/
+	function contarFormacoes(idFormacoes, idDisplayer) {
+		let formacoes = document.getElementById(idFormacoes);
+		let h4Elements = formacoes.getElementsByTagName("h4");
 		let h4Count = h4Elements.length;
 
-		let quantFormacoesProgramacao = document.getElementById("quant_formacoes_programacao");
-		quantFormacoesProgramacao.innerHTML = h4Count + " Formações";
+		let displayer = document.getElementById(idDisplayer);
+		displayer.innerHTML = h4Count + " Formações";
+	}
+
+	/*atualizando quantidades de formações*/
+	window.onload = function () {
+		//Atualizando a quantidade de formações de programação
+		contarFormacoes("formacoes_programacao","quant_formacoes_programacao");
 	};
 </script>
