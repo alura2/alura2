@@ -162,12 +162,12 @@
 											xmlns:xlink="http://www.w3.org/1999/xlink">
 											<use xlink:href="/svg,1617296511/carreira#icon-carreira-icon-placa"></use>
 										</svg>
-										<p class="formacoes__total--data-science">
-											0/34 Formações</p>
+										<p class="formacoes__total--data-science" id="quant_formacoes_data_science">
+											x Formações</p>
 									</div>
 								</div>
 							</div>
-							<div class="formacao formacoes__list_wrapper">
+							<div class="formacao formacoes__list_wrapper" id="formacoes_data_science">
 
 							</div>
 						</li>
@@ -289,7 +289,7 @@
 
 </html>
 <script>
-	
+
 	/** Atualiza a quantidade de formações baseado na quantidade de h4 dentro de uma div
 	 * @param idFormacoes div a ser contada
 	 * @param idDisplayer onde será exibido a quantidade
@@ -307,5 +307,6 @@
 	window.onload = function () {
 		//Atualizando a quantidade de formações de programação
 		contarFormacoes("formacoes_programacao","quant_formacoes_programacao");
+		contarFormacoes("formacoes_data_science","quant_formacoes_data_science");
 	};
 </script>
